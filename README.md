@@ -57,17 +57,17 @@ Prerequisite: Python `3.10+`.
 
 Windows:
 ```powershell
-python -m venv .venv
+python -m venv .venv / python3 -m venv .venv
 .venv\Scripts\activate
-pip install -r requirements.txt
+pip install -r requirements.txt /  python -m pip install -r requirements.txt / python3 -m pip install -r requirements.txt
 python main.py
 ```
 
 macOS / Ubuntu:
 ```bash
-python -m venv .venv
+python -m venv .venv 
 source .venv/bin/activate
-pip install -r requirements.txt
+pip install -r requirements.txt 
 python main.py
 ```
 
@@ -98,6 +98,13 @@ Live providers in the main demo:
 
 If provider calls fail, the agent falls back to deterministic planning, parsing, or report templates.
 
+## Live vs Mocked
+- Live in `python main.py`: Groq for loop reasoning/extraction and Gemini for report writing.
+- Mocked/deterministic in evals: scenario YAML injects HTML, tool failures, budget limits, and expected outcomes so recovery paths are reproducible.
+- Mock shape: fixture HTML and deals follow the same structure as real tool/provider outputs; they are not single hardcoded success strings.
+- Provider fallback: if Groq/Gemini is rate-limited or fails, the agent falls back to deterministic logic and records that in `outputs/` and LangSmith.
+- Live-provider eval note: the core eval harness is deterministic for reproducibility. The live-provider requirement is demonstrated through `python main.py`; a dedicated live-provider eval subset is listed as future work.
+
 ## Logs And Traces
 Every run writes:
 - `outputs/audit_report.json`
@@ -115,7 +122,7 @@ Get-Content outputs\tool_history.jsonl
 Get-Content outputs\provider_calls.json
 ```
 
-LangSmith is optional but useful during the demo. On a new machine, create a LangSmith account, generate an API key, set `LANGSMITH_API_KEY` and `LANGSMITH_PROJECT=grabon-loop` in `.env`, then run `python main.py`. LangSmith will create/use the `grabon-loop` project in that account. Open [LangSmith](https://smith.langchain.com/) and inspect the latest root trace named `grabon_main`.
+ Open [LangSmith](https://smith.langchain.com/), select project `grabon-loop`, and inspect the latest root trace named `grabon_main`.
 
 Fallback spans to search:
 - `provider_fallback:*`
