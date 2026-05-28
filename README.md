@@ -98,6 +98,13 @@ Live providers in the main demo:
 
 If provider calls fail, the agent falls back to deterministic planning, parsing, or report templates.
 
+## Live vs Mocked
+- Live in `python main.py`: Groq for loop reasoning/extraction and Gemini for report writing.
+- Mocked/deterministic in evals: scenario YAML injects HTML, tool failures, budget limits, and expected outcomes so recovery paths are reproducible.
+- Mock shape: fixture HTML and deals follow the same structure as real tool/provider outputs; they are not single hardcoded success strings.
+- Provider fallback: if Groq/Gemini is rate-limited or fails, the agent falls back to deterministic logic and records that in `outputs/` and LangSmith.
+- Live-provider eval note: the core eval harness is deterministic for reproducibility. The live-provider requirement is demonstrated through `python main.py`; a dedicated live-provider eval subset is listed as future work.
+
 ## Logs And Traces
 Every run writes:
 - `outputs/audit_report.json`
