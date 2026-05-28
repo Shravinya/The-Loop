@@ -1,0 +1,27 @@
+name: failure_recovery_3
+merchants:
+- name: CRED
+  deals_url: https://example.com/cred
+  category: Finance
+  js_rendered: false
+  known_blocks: []
+initial_state:
+  CRED:
+    next_tool: unreliable_fetch
+tool_outcomes:
+  CRED:
+    unreliable_fetch:
+    - error_type: TIMEOUT
+      message: flaky 1
+    - error_type: TIMEOUT
+      message: flaky 2
+    - error_type: TIMEOUT
+      message: flaky 3
+    - error_type: TIMEOUT
+      message: flaky 4
+expected:
+  statuses:
+    CRED: DEGRADED
+  tools_used_contains:
+    CRED:
+    - unreliable_fetch

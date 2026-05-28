@@ -1,0 +1,39 @@
+name: happy_path_5
+merchants:
+- name: Ajio
+  deals_url: https://example.com/ajio
+  category: Fashion
+  js_rendered: false
+  known_blocks: []
+merchant_fixtures:
+  Ajio:
+    extracted_deals:
+    - merchant: Ajio
+      title: Ajio featured deal 1
+      discount_pct: 15
+      deal_type: percentage
+      conditions: Valid on select categories
+      min_order: 599
+      expiry: null
+      coupon_code: AJIO01
+    - merchant: Ajio
+      title: Ajio featured deal 2
+      discount_pct: 35
+      deal_type: percentage
+      conditions: Valid on select categories
+      min_order: 699
+      expiry: null
+      coupon_code: AJIO02
+    - merchant: Ajio
+      title: Ajio page-only deal
+      discount_pct: 19
+      deal_type: percentage
+      conditions: Flash
+      min_order: 699
+      expiry: null
+      coupon_code: AJFLASH
+      confidence: 0.9
+    days_since_last_update: 9
+expected:
+  statuses:
+    Ajio: DONE

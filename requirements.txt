@@ -1,0 +1,7 @@
+pydantic>=2.7.0
+rich>=13.7.0
+pytest>=8.2.0
+pyyaml>=6.0.1
+groq>=0.9.0
+google-genai>=0.3.0
+langsmith>=0.2.0

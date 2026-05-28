@@ -1,0 +1,39 @@
+name: happy_path_4
+merchants:
+- name: Nykaa
+  deals_url: https://example.com/nykaa
+  category: Fashion
+  js_rendered: false
+  known_blocks: []
+merchant_fixtures:
+  Nykaa:
+    extracted_deals:
+    - merchant: Nykaa
+      title: Nykaa featured deal 1
+      discount_pct: 15
+      deal_type: percentage
+      conditions: Valid on select categories
+      min_order: 599
+      expiry: null
+      coupon_code: NYKA01
+    - merchant: Nykaa
+      title: Nykaa featured deal 2
+      discount_pct: 20
+      deal_type: percentage
+      conditions: Valid on select categories
+      min_order: 699
+      expiry: null
+      coupon_code: NYKA02
+    - merchant: Nykaa
+      title: Nykaa new page-only deal
+      discount_pct: 22
+      deal_type: percentage
+      conditions: Weekend
+      min_order: 799
+      expiry: null
+      coupon_code: NYKNEW
+      confidence: 0.88
+    days_since_last_update: 1
+expected:
+  statuses:
+    Nykaa: DONE

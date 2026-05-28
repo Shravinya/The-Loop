@@ -1,0 +1,1970 @@
+[
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 301
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 205
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 328
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 401
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 317
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "extract",
+    "tokens_used": 219
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 172
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 449
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 538
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 435
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 174
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 590
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 655
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 568
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 1298
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 306
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 214
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 332
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 411
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 319
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "extract",
+    "tokens_used": 224
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 172
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 458
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 534
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 443
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 174
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 599
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 669
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 583
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 1949
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 291
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 209
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 330
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 439
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 311
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "extract",
+    "tokens_used": 231
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 172
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 457
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 553
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 439
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 174
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 594
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 668
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 579
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 2578
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 309
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 209
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 328
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 444
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 315
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "extract",
+    "tokens_used": 225
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 172
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 447
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 534
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 429
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 174
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 583
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 691
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 557
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 3201
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 298
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 209
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 324
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 406
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 309
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "extract",
+    "tokens_used": 226
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 172
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 445
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 515
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 432
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 174
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 579
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 664
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 563
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 3832
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 307
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 213
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 171
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 325
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 408
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 309
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "extract",
+    "tokens_used": 226
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 172
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 445
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 520
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 433
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 174
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 582
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 643
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 556
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 4472
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 304
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 208
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 329
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 412
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 309
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "extract",
+    "tokens_used": 220
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 172
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 451
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 530
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 439
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 174
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 593
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 667
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 576
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 5125
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 302
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 212
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 171
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 326
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 408
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 311
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "extract",
+    "tokens_used": 227
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 172
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 447
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 522
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 427
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 174
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 581
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 640
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 555
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 5744
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 305
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 207
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 324
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 417
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 305
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "extract",
+    "tokens_used": 222
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 172
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 442
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 536
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 422
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 174
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 578
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 652
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 561
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 296
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 211
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 323
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 398
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 310
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "extract",
+    "tokens_used": 221
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 172
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 442
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 513
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 424
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 174
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 576
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 677
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 550
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 304
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 207
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 171
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 325
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 402
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 312
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "extract",
+    "tokens_used": 221
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 172
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 440
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 518
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 426
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 174
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 574
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 657
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 551
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 302
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 212
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 171
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 324
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 398
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 308
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "extract",
+    "tokens_used": 224
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 172
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 442
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 514
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 421
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 174
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 574
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 632
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 546
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 304
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 208
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 171
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 328
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 408
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 313
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "extract",
+    "tokens_used": 222
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 172
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 447
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 537
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 427
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 174
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 584
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 705
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 567
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 304
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 214
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 171
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 324
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 414
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 303
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "extract",
+    "tokens_used": 224
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 172
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 443
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 515
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 436
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 174
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 582
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 668
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 566
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 300
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 212
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 330
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 415
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 310
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "extract",
+    "tokens_used": 227
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 172
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 458
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 547
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 444
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 174
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 601
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 680
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 579
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 302
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 209
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 332
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 411
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 312
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "extract",
+    "tokens_used": 223
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 172
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 455
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 527
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 441
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 174
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 595
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 661
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 571
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 309
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 215
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 171
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 329
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 413
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 314
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "extract",
+    "tokens_used": 228
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 172
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 449
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 538
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 442
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 174
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 583
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 673
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 567
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 302
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 208
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 324
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 401
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 311
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "extract",
+    "tokens_used": 221
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 172
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 444
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 531
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 426
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 174
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 575
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 633
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 555
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 294
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 207
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 172
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 325
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 402
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 306
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "extract",
+    "tokens_used": 223
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 172
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 440
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 507
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 423
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 174
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 576
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 647
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 557
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 305
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 213
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 171
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 329
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 394
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 308
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "extract",
+    "tokens_used": 229
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 172
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 451
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 523
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 431
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 174
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.1-8b-instant",
+    "purpose": "loop_decide",
+    "tokens_used": 588
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_plan",
+    "tokens_used": 672
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_act",
+    "tokens_used": 562
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "purpose": "loop_observe",
+    "tokens_used": 170
+  }
+]

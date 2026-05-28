@@ -1,0 +1,13 @@
+name: budget_exceeded_2
+budget:
+  max_wall_clock_seconds: 0.0
+merchants:
+- name: Amazon
+  deals_url: https://example.com/amazon
+  category: Electronics
+  js_rendered: false
+  known_blocks: []
+expected:
+  statuses:
+    Amazon: PENDING
+  halt_reason: WALL_CLOCK

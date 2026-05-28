@@ -1,0 +1,30 @@
+name: happy_path_2
+merchants:
+- name: Myntra
+  deals_url: https://example.com/myntra
+  category: Fashion
+  js_rendered: false
+  known_blocks: []
+merchant_fixtures:
+  Myntra:
+    extracted_deals:
+    - merchant: Myntra
+      title: Myntra featured deal 1
+      discount_pct: 15
+      deal_type: percentage
+      conditions: Valid on select categories
+      min_order: 599
+      expiry: null
+      coupon_code: MYNT01
+    - merchant: Myntra
+      title: Myntra featured deal 2
+      discount_pct: 99
+      deal_type: percentage
+      conditions: Valid on select categories
+      min_order: 699
+      expiry: null
+      coupon_code: MYNT02
+    days_since_last_update: 2
+expected:
+  statuses:
+    Myntra: DONE

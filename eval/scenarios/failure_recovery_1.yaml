@@ -1,0 +1,41 @@
+name: failure_recovery_1
+merchants:
+- name: Amazon
+  deals_url: https://example.com/amazon
+  category: Electronics
+  js_rendered: false
+  known_blocks: []
+tool_outcomes:
+  Amazon:
+    fetch_html:
+    - error_type: 403_CF
+      message: Cloudflare blocked raw fetch
+merchant_fixtures:
+  Amazon:
+    extracted_deals:
+    - merchant: Amazon
+      title: Amazon featured deal 1
+      discount_pct: 15
+      deal_type: percentage
+      conditions: Valid on select categories
+      min_order: 599
+      expiry: null
+      coupon_code: AMAZ01
+    - merchant: Amazon
+      title: Amazon featured deal 2
+      discount_pct: 20
+      deal_type: percentage
+      conditions: Valid on select categories
+      min_order: 699
+      expiry: null
+      coupon_code: AMAZ02
+expected:
+  statuses:
+    Amazon: DONE
+  tools_used_contains:
+    Amazon:
+    - fetch_html
+    - render_js
+  reasoning_contains:
+    Amazon:
+    - switching from fetch_html to render_js

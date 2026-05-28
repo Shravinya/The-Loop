@@ -1,0 +1,16 @@
+name: impossible_2
+merchants:
+- name: Blinkit
+  deals_url: https://example.com/blinkit
+  category: Food
+  js_rendered: false
+  known_blocks: []
+merchant_fixtures:
+  Blinkit:
+    extracted_deals: []
+expected:
+  statuses:
+    Blinkit: IMPOSSIBLE
+  tools_used_contains:
+    Blinkit:
+    - fetch_google_cache

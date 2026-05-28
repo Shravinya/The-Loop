@@ -1,0 +1,402 @@
+[
+  {
+    "merchant": "Amazon",
+    "title": "Up to 40% off on Electronics",
+    "discount_pct": 40,
+    "deal_type": "percentage",
+    "conditions": "Valid on select electronics brands",
+    "min_order": 1999,
+    "expiry": "2026-07-15",
+    "coupon_code": "AMAZELEC40"
+  },
+  {
+    "merchant": "Amazon",
+    "title": "10% instant discount on ICICI cards",
+    "discount_pct": 10,
+    "deal_type": "cashback",
+    "conditions": "Max discount Rs.1500 on eligible products",
+    "min_order": 5000,
+    "expiry": "2026-06-30",
+    "coupon_code": "ICICI10"
+  },
+  {
+    "merchant": "Myntra",
+    "title": "Flat 30% off on Fashion Store",
+    "discount_pct": 30,
+    "deal_type": "percentage",
+    "conditions": "Valid on select fashion items",
+    "min_order": 1499,
+    "expiry": "2026-07-10",
+    "coupon_code": "MYNTRA30"
+  },
+  {
+    "merchant": "Myntra",
+    "title": "Extra 15% off on first order",
+    "discount_pct": 15,
+    "deal_type": "percentage",
+    "conditions": "First order only",
+    "min_order": 999,
+    "expiry": "2026-06-25",
+    "coupon_code": "FIRST15"
+  },
+  {
+    "merchant": "Zomato",
+    "title": "Flat 20% off up to Rs.120",
+    "discount_pct": 20,
+    "deal_type": "cashback",
+    "conditions": "On food delivery orders",
+    "min_order": 299,
+    "expiry": "2026-06-20",
+    "coupon_code": "HUNGRY20"
+  },
+  {
+    "merchant": "Zomato",
+    "title": "Free delivery on selected restaurants",
+    "discount_pct": 10,
+    "deal_type": "percentage",
+    "conditions": "Applicable on Gold partner outlets",
+    "min_order": 199,
+    "expiry": null,
+    "coupon_code": "FREEDLV"
+  },
+  {
+    "merchant": "Swiggy",
+    "title": "Up to 60% off on food delivery",
+    "discount_pct": 60,
+    "deal_type": "percentage",
+    "conditions": "Valid in select zones",
+    "min_order": 249,
+    "expiry": "2026-06-22",
+    "coupon_code": "SWIGGY60"
+  },
+  {
+    "merchant": "Swiggy",
+    "title": "10% off on Instamart orders",
+    "discount_pct": 10,
+    "deal_type": "cashback",
+    "conditions": "Max discount Rs.100",
+    "min_order": 499,
+    "expiry": "2026-07-01",
+    "coupon_code": "SMART10"
+  },
+  {
+    "merchant": "MakeMyTrip",
+    "title": "Flat 20% off on domestic hotels",
+    "discount_pct": 20,
+    "deal_type": "percentage",
+    "conditions": "Weekend bookings only",
+    "min_order": 3000,
+    "expiry": "2026-07-05",
+    "coupon_code": "MMTHOTEL20"
+  },
+  {
+    "merchant": "MakeMyTrip",
+    "title": "Up to 15% off on flight bookings",
+    "discount_pct": 15,
+    "deal_type": "percentage",
+    "conditions": "Valid on select airlines",
+    "min_order": 4500,
+    "expiry": "2026-06-28",
+    "coupon_code": "FLY15"
+  },
+  {
+    "merchant": "Nykaa",
+    "title": "Flat 25% off on beauty essentials",
+    "discount_pct": 25,
+    "deal_type": "percentage",
+    "conditions": "Selected brands only",
+    "min_order": 1299,
+    "expiry": "2026-07-08",
+    "coupon_code": "NYKAA25"
+  },
+  {
+    "merchant": "Nykaa",
+    "title": "Buy 2 Get 1 on skincare combos",
+    "discount_pct": 33,
+    "deal_type": "bogo",
+    "conditions": "Lowest priced item free",
+    "min_order": 899,
+    "expiry": null,
+    "coupon_code": "SKINB2G1"
+  },
+  {
+    "merchant": "Puma",
+    "title": "Up to 50% off on footwear",
+    "discount_pct": 50,
+    "deal_type": "percentage",
+    "conditions": "Valid on running shoes collection",
+    "min_order": 2499,
+    "expiry": "2026-07-12",
+    "coupon_code": "PUMA50"
+  },
+  {
+    "merchant": "Puma",
+    "title": "Extra 10% off on prepaid orders",
+    "discount_pct": 10,
+    "deal_type": "percentage",
+    "conditions": "Prepaid mode only",
+    "min_order": 1999,
+    "expiry": "2026-06-30",
+    "coupon_code": "PREPAID10"
+  },
+  {
+    "merchant": "Ajio",
+    "title": "Flat 40% off on top fashion brands",
+    "discount_pct": 40,
+    "deal_type": "percentage",
+    "conditions": "New season stock excluded",
+    "min_order": 1799,
+    "expiry": "2026-07-18",
+    "coupon_code": "AJIO40"
+  },
+  {
+    "merchant": "Ajio",
+    "title": "Extra 15% off with Supercoins",
+    "discount_pct": 15,
+    "deal_type": "cashback",
+    "conditions": "Supercoins redemption required",
+    "min_order": 1499,
+    "expiry": "2026-06-27",
+    "coupon_code": "SUPER15"
+  },
+  {
+    "merchant": "Boat",
+    "title": "Up to 55% off on audio devices",
+    "discount_pct": 55,
+    "deal_type": "percentage",
+    "conditions": "Limited period sale",
+    "min_order": 999,
+    "expiry": "2026-07-03",
+    "coupon_code": "BOAT55"
+  },
+  {
+    "merchant": "Boat",
+    "title": "Flat 12% off on smartwatch range",
+    "discount_pct": 12,
+    "deal_type": "percentage",
+    "conditions": "On selected models",
+    "min_order": 1999,
+    "expiry": "2026-06-24",
+    "coupon_code": "WATCH12"
+  },
+  {
+    "merchant": "CRED",
+    "title": "10% cashback on partner spends",
+    "discount_pct": 10,
+    "deal_type": "cashback",
+    "conditions": "For CRED app users only",
+    "min_order": 1000,
+    "expiry": "2026-07-09",
+    "coupon_code": "CRED10"
+  },
+  {
+    "merchant": "CRED",
+    "title": "Flat 15% off on premium memberships",
+    "discount_pct": 15,
+    "deal_type": "percentage",
+    "conditions": "Invite-only offers",
+    "min_order": 4999,
+    "expiry": null,
+    "coupon_code": "MEMBER15"
+  },
+  {
+    "merchant": "Flipkart",
+    "title": "Up to 45% off on electronics",
+    "discount_pct": 45,
+    "deal_type": "percentage",
+    "conditions": "Bank offers may stack",
+    "min_order": 2499,
+    "expiry": "2026-07-14",
+    "coupon_code": "FLIP45"
+  },
+  {
+    "merchant": "Flipkart",
+    "title": "10% instant discount on Axis cards",
+    "discount_pct": 10,
+    "deal_type": "cashback",
+    "conditions": "Max Rs.1250 instant discount",
+    "min_order": 5000,
+    "expiry": "2026-06-29",
+    "coupon_code": "AXIS10"
+  },
+  {
+    "merchant": "BigBasket",
+    "title": "Flat 20% off on grocery combos",
+    "discount_pct": 20,
+    "deal_type": "percentage",
+    "conditions": "Applicable on combo packs",
+    "min_order": 999,
+    "expiry": "2026-07-04",
+    "coupon_code": "BB20"
+  },
+  {
+    "merchant": "BigBasket",
+    "title": "Extra 8% off on first order",
+    "discount_pct": 8,
+    "deal_type": "percentage",
+    "conditions": "New users only",
+    "min_order": 699,
+    "expiry": "2026-06-21",
+    "coupon_code": "FIRST8"
+  },
+  {
+    "merchant": "PharmEasy",
+    "title": "Up to 22% off on medicines",
+    "discount_pct": 22,
+    "deal_type": "percentage",
+    "conditions": "On select prescription drugs",
+    "min_order": 799,
+    "expiry": "2026-07-11",
+    "coupon_code": "PHARM22"
+  },
+  {
+    "merchant": "PharmEasy",
+    "title": "Flat 15% off on healthcare range",
+    "discount_pct": 15,
+    "deal_type": "percentage",
+    "conditions": "Personal care items only",
+    "min_order": 599,
+    "expiry": "2026-06-26",
+    "coupon_code": "CARE15"
+  },
+  {
+    "merchant": "Mamaearth",
+    "title": "Flat 30% off on skincare products",
+    "discount_pct": 30,
+    "deal_type": "percentage",
+    "conditions": "No combo with wallet offers",
+    "min_order": 899,
+    "expiry": "2026-07-06",
+    "coupon_code": "MAMA30"
+  },
+  {
+    "merchant": "Mamaearth",
+    "title": "Buy 1 Get 1 on facewash range",
+    "discount_pct": 50,
+    "deal_type": "bogo",
+    "conditions": "Equal or lower priced product free",
+    "min_order": 499,
+    "expiry": null,
+    "coupon_code": "B1G1MAMA"
+  },
+  {
+    "merchant": "Lenskart",
+    "title": "Flat 35% off on eyeglasses",
+    "discount_pct": 35,
+    "deal_type": "percentage",
+    "conditions": "Selected frame collections",
+    "min_order": 1499,
+    "expiry": "2026-07-13",
+    "coupon_code": "LENS35"
+  },
+  {
+    "merchant": "Lenskart",
+    "title": "Extra 10% off on prepaid lens orders",
+    "discount_pct": 10,
+    "deal_type": "percentage",
+    "conditions": "Contact lens category only",
+    "min_order": 999,
+    "expiry": "2026-06-30",
+    "coupon_code": "LENS10"
+  },
+  {
+    "merchant": "Meesho",
+    "title": "Up to 50% off on apparel",
+    "discount_pct": 50,
+    "deal_type": "percentage",
+    "conditions": "On selected sellers only",
+    "min_order": 699,
+    "expiry": "2026-07-16",
+    "coupon_code": "MEESHO50"
+  },
+  {
+    "merchant": "Meesho",
+    "title": "Flat 12% off on home essentials",
+    "discount_pct": 12,
+    "deal_type": "percentage",
+    "conditions": "Home and kitchen category",
+    "min_order": 499,
+    "expiry": "2026-06-23",
+    "coupon_code": "HOME12"
+  },
+  {
+    "merchant": "Tata CLiQ",
+    "title": "Flat 35% off on branded fashion",
+    "discount_pct": 35,
+    "deal_type": "percentage",
+    "conditions": "Excludes luxury labels",
+    "min_order": 1999,
+    "expiry": "2026-07-17",
+    "coupon_code": "CLIQ35"
+  },
+  {
+    "merchant": "Tata CLiQ",
+    "title": "Extra 10% off via NeuPass",
+    "discount_pct": 10,
+    "deal_type": "cashback",
+    "conditions": "NeuPass members only",
+    "min_order": 1499,
+    "expiry": "2026-06-28",
+    "coupon_code": "NEU10"
+  },
+  {
+    "merchant": "Blinkit",
+    "title": "Flat 15% off on essentials",
+    "discount_pct": 15,
+    "deal_type": "percentage",
+    "conditions": "Daily essentials category",
+    "min_order": 399,
+    "expiry": "2026-07-02",
+    "coupon_code": "BLINK15"
+  },
+  {
+    "merchant": "Blinkit",
+    "title": "Free delivery above Rs.299",
+    "discount_pct": 8,
+    "deal_type": "percentage",
+    "conditions": "Delivery fee waiver equivalent",
+    "min_order": 299,
+    "expiry": null,
+    "coupon_code": "FREEDEL"
+  },
+  {
+    "merchant": "Cleartrip",
+    "title": "Up to 20% off on domestic flights",
+    "discount_pct": 20,
+    "deal_type": "percentage",
+    "conditions": "Select airline partners",
+    "min_order": 4500,
+    "expiry": "2026-07-07",
+    "coupon_code": "CLEAR20"
+  },
+  {
+    "merchant": "Cleartrip",
+    "title": "Flat 18% off on hotel bookings",
+    "discount_pct": 18,
+    "deal_type": "percentage",
+    "conditions": "Valid on app bookings only",
+    "min_order": 3500,
+    "expiry": "2026-06-29",
+    "coupon_code": "HOTEL18"
+  },
+  {
+    "merchant": "HealthKart",
+    "title": "Flat 25% off on whey protein",
+    "discount_pct": 25,
+    "deal_type": "percentage",
+    "conditions": "Selected brands and pack sizes",
+    "min_order": 1599,
+    "expiry": "2026-07-10",
+    "coupon_code": "HK25"
+  },
+  {
+    "merchant": "HealthKart",
+    "title": "Extra 12% off on supplements",
+    "discount_pct": 12,
+    "deal_type": "percentage",
+    "conditions": "On selected nutrition products",
+    "min_order": 999,
+    "expiry": "2026-06-27",
+    "coupon_code": "NUTRI12"
+  }
+]

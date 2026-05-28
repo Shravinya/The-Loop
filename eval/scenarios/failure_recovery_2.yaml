@@ -1,0 +1,40 @@
+name: failure_recovery_2
+merchants:
+- name: Puma
+  deals_url: https://example.com/puma
+  category: Fashion
+  js_rendered: false
+  known_blocks: []
+tool_outcomes:
+  Puma:
+    fetch_html:
+    - error_type: '429'
+      message: Rate limited
+merchant_fixtures:
+  Puma:
+    extracted_deals:
+    - merchant: Puma
+      title: Puma featured deal 1
+      discount_pct: 15
+      deal_type: percentage
+      conditions: Valid on select categories
+      min_order: 599
+      expiry: null
+      coupon_code: PUMA01
+    - merchant: Puma
+      title: Puma featured deal 2
+      discount_pct: 20
+      deal_type: percentage
+      conditions: Valid on select categories
+      min_order: 699
+      expiry: null
+      coupon_code: PUMA02
+expected:
+  statuses:
+    Puma: DONE
+  tools_used_contains:
+    Puma:
+    - fetch_html
+  reasoning_contains:
+    Puma:
+    - retry fetch_html with backoff attempt 1

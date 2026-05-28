@@ -1,0 +1,36 @@
+name: happy_path_1
+merchants:
+- name: Amazon
+  deals_url: https://example.com/amazon
+  category: Electronics
+  js_rendered: false
+  known_blocks: []
+merchant_fixtures:
+  Amazon:
+    extracted_deals:
+    - merchant: Amazon
+      title: Amazon featured deal 1
+      discount_pct: 15
+      deal_type: percentage
+      conditions: Valid on select categories
+      min_order: 599
+      expiry: null
+      coupon_code: AMAZ01
+    - merchant: Amazon
+      title: Amazon featured deal 2
+      discount_pct: 20
+      deal_type: percentage
+      conditions: Valid on select categories
+      min_order: 699
+      expiry: null
+      coupon_code: AMAZ02
+    days_since_last_update: 2
+expected:
+  statuses:
+    Amazon: DONE
+  tools_used_contains:
+    Amazon:
+    - fetch_html
+    - extract_deals
+    - audit_deals
+    - write_report

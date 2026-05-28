@@ -1,0 +1,22 @@
+name: happy_path_3
+merchants:
+- name: Boat
+  deals_url: https://example.com/boat
+  category: Electronics
+  js_rendered: false
+  known_blocks: []
+merchant_fixtures:
+  Boat:
+    extracted_deals:
+    - merchant: Boat
+      title: Boat featured deal 1
+      discount_pct: 15
+      deal_type: percentage
+      conditions: Valid on select categories
+      min_order: 599
+      expiry: null
+      coupon_code: BOAT01
+    days_since_last_update: 3
+expected:
+  statuses:
+    Boat: DONE

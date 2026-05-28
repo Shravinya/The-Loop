@@ -1,0 +1,13 @@
+name: impossible_1
+merchants:
+- name: Cleartrip
+  deals_url: https://example.com/404
+  category: Travel
+  js_rendered: false
+  known_blocks: []
+expected:
+  statuses:
+    Cleartrip: IMPOSSIBLE
+  reasoning_contains:
+    Cleartrip:
+    - Permanent 404
