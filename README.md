@@ -366,13 +366,9 @@ For the challenge rubric, this repo maps as follows:
 
 ### At least 2 real providers in the final demo
 - supported in the main run path
-- recommended live providers:
+- live providers:
   - `Groq`
   - `Gemini`
-
-### Not the main focus here
-- multi-agent coordination
-- advanced multi-model routing as its own evaluation target
 
 ## Eval Strategy
 The project uses scenario-driven evals rather than relying on "it worked once in a demo."
