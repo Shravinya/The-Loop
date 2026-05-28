@@ -1,7 +1,7 @@
 name: happy_path_3
 merchants:
 - name: Boat
-  deals_url: https://example.com/boat
+  deals_url: https://www.boat-lifestyle.com/pages/offers
   category: Electronics
   js_rendered: false
   known_blocks: []

@@ -1,7 +1,7 @@
 name: failure_recovery_2
 merchants:
 - name: Puma
-  deals_url: https://example.com/puma
+  deals_url: https://in.puma.com/in/en/sale
   category: Fashion
   js_rendered: false
   known_blocks: []

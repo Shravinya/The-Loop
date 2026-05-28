@@ -1,7 +1,7 @@
 name: happy_path_5
 merchants:
 - name: Ajio
-  deals_url: https://example.com/ajio
+  deals_url: https://www.ajio.com/sale
   category: Fashion
   js_rendered: false
   known_blocks: []

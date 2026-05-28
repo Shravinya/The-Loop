@@ -1,9 +1,9 @@
 name: failure_recovery_3
 merchants:
 - name: CRED
-  deals_url: https://example.com/cred
+  deals_url: https://cred.club/
   category: Finance
-  js_rendered: false
+  js_rendered: true
   known_blocks: []
 initial_state:
   CRED:
