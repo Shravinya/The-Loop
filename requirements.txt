@@ -5,3 +5,4 @@ pyyaml>=6.0.1
 groq>=0.9.0
 google-genai>=0.3.0
 langsmith>=0.2.0
+python-dotenv>=1.0.0
