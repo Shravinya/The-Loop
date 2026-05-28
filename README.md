@@ -84,7 +84,7 @@ PROVIDER_TIMEOUT_SECONDS=4
 LANGSMITH_API_KEY=
 LANGSMITH_TRACING=true
 LANGSMITH_TRACING_V2=true
-LANGSMITH_PROJECT=grabon-loop
+LANGSMITH_PROJECT=created-project(placeholder)
 ```
 
 Get API keys:
@@ -122,7 +122,7 @@ Get-Content outputs\tool_history.jsonl
 Get-Content outputs\provider_calls.json
 ```
 
- Open [LangSmith](https://smith.langchain.com/), select project `grabon-loop`, and inspect the latest root trace named `grabon_main`.
+ Open [LangSmith](https://smith.langchain.com/), create and select project `placeholder`, and inspect the latest root trace named `created project`.
 
 Fallback spans to search:
 - `provider_fallback:*`
