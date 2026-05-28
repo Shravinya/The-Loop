@@ -1,7 +1,7 @@
 name: failure_recovery_1
 merchants:
 - name: Amazon
-  deals_url: https://example.com/amazon
+  deals_url: https://www.amazon.in/deals
   category: Electronics
   js_rendered: false
   known_blocks: []

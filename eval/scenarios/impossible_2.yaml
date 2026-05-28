@@ -1,9 +1,9 @@
 name: impossible_2
 merchants:
 - name: Blinkit
-  deals_url: https://example.com/blinkit
+  deals_url: https://blinkit.com/
   category: Food
-  js_rendered: false
+  js_rendered: true
   known_blocks: []
 merchant_fixtures:
   Blinkit:

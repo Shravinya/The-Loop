@@ -1,9 +1,9 @@
 name: impossible_1
 merchants:
 - name: Cleartrip
-  deals_url: https://example.com/404
+  deals_url: https://www.cleartrip.com/offers
   category: Travel
-  js_rendered: false
+  js_rendered: true
   known_blocks: []
 expected:
   statuses:

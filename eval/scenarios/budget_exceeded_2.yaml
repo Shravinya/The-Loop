@@ -3,7 +3,7 @@ budget:
   max_wall_clock_seconds: 0.0
 merchants:
 - name: Amazon
-  deals_url: https://example.com/amazon
+  deals_url: https://www.amazon.in/deals
   category: Electronics
   js_rendered: false
   known_blocks: []

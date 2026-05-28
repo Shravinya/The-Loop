@@ -1,20 +1,20 @@
 name: error_discrimination
 merchants:
 - name: Amazon
-  deals_url: https://example.com/404
+  deals_url: https://www.amazon.in/deals
   category: Electronics
   js_rendered: false
   known_blocks: []
 - name: Myntra
-  deals_url: https://example.com/myntra
+  deals_url: https://www.myntra.com/shop/men
   category: Fashion
   js_rendered: false
   known_blocks: []
 - name: Zomato
-  deals_url: https://example.com/zomato
+  deals_url: https://www.zomato.com/
   category: Food
-  js_rendered: false
-  known_blocks: []
+  js_rendered: true
+  known_blocks: [cloudflare]
 tool_outcomes:
   Myntra:
     fetch_html:

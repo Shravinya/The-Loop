@@ -1,7 +1,7 @@
 name: happy_path_4
 merchants:
 - name: Nykaa
-  deals_url: https://example.com/nykaa
+  deals_url: https://www.nykaa.com/sp/offers-page
   category: Fashion
   js_rendered: false
   known_blocks: []

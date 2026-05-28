@@ -1,7 +1,7 @@
 name: happy_path_2
 merchants:
 - name: Myntra
-  deals_url: https://example.com/myntra
+  deals_url: https://www.myntra.com/shop/men
   category: Fashion
   js_rendered: false
   known_blocks: []
