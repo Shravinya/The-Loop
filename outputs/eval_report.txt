@@ -1,10 +1,13 @@
 budget_exceeded_1: PASS
   - Amazon phase trace: PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN
 budget_exceeded_2: PASS
-error_discrimination: PASS
-  - Amazon phase trace: PLAN -> ACT -> OBSERVE -> DECIDE
+error_discrimination: FAIL
+  - Amazon phase trace: PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE
   - Myntra phase trace: PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE
-  - Zomato phase trace: PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE
+  - Zomato phase trace: PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE
+  - Amazon expected status IMPOSSIBLE but got DONE
+  - Amazon reasoning missing snippet: Permanent 404
+  - Zomato reasoning missing snippet: switching from fetch_html to render_js
 failure_recovery_1: PASS
   - Amazon phase trace: PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE
 failure_recovery_2: PASS
@@ -21,7 +24,9 @@ happy_path_4: PASS
   - Nykaa phase trace: PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE
 happy_path_5: PASS
   - Ajio phase trace: PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE
-impossible_1: PASS
-  - Cleartrip phase trace: PLAN -> ACT -> OBSERVE -> DECIDE
+impossible_1: FAIL
+  - Cleartrip phase trace: PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE
+  - Cleartrip expected status IMPOSSIBLE but got DONE
+  - Cleartrip reasoning missing snippet: Permanent 404
 impossible_2: PASS
   - Blinkit phase trace: PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE

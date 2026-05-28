@@ -143,7 +143,7 @@
   },
   {
     "name": "error_discrimination",
-    "passed": true,
+    "passed": false,
     "expected": {
       "statuses": {
         "Amazon": "IMPOSSIBLE",
@@ -164,14 +164,17 @@
     },
     "actual": {
       "statuses": {
-        "Amazon": "IMPOSSIBLE",
+        "Amazon": "DONE",
         "Myntra": "DONE",
         "Zomato": "DONE"
       },
       "halt_reason": null,
       "tools_used": {
         "Amazon": [
-          "fetch_html"
+          "fetch_html",
+          "extract_deals",
+          "audit_deals",
+          "write_report"
         ],
         "Myntra": [
           "fetch_html",
@@ -181,7 +184,6 @@
           "write_report"
         ],
         "Zomato": [
-          "fetch_html",
           "render_js",
           "extract_deals",
           "audit_deals",
@@ -190,7 +192,10 @@
       },
       "reasoning": {
         "Amazon": [
-          "Permanent 404; stop immediately."
+          "Move to the next planned step.",
+          "Move to the next planned step.",
+          "Move to the next planned step.",
+          "Amazon report completed."
         ],
         "Myntra": [
           "Transient 429; retry fetch_html with backoff attempt 1.",
@@ -200,7 +205,6 @@
           "Myntra report completed."
         ],
         "Zomato": [
-          "Persistent failure 403_CF; switching from fetch_html to render_js.",
           "Move to the next planned step.",
           "Move to the next planned step.",
           "Move to the next planned step.",
@@ -212,6 +216,18 @@
           "PLAN",
           "ACT",
           "OBSERVE",
+          "DECIDE",
+          "PLAN",
+          "ACT",
+          "OBSERVE",
+          "DECIDE",
+          "PLAN",
+          "ACT",
+          "OBSERVE",
+          "DECIDE",
+          "PLAN",
+          "ACT",
+          "OBSERVE",
           "DECIDE"
         ],
         "Myntra": [
@@ -237,10 +253,6 @@
           "DECIDE"
         ],
         "Zomato": [
-          "PLAN",
-          "ACT",
-          "OBSERVE",
-          "DECIDE",
           "PLAN",
           "ACT",
           "OBSERVE",
@@ -282,7 +294,7 @@
             "phase": "OBSERVE",
             "action": "observe_result",
             "tool_called": "fetch_html",
-            "observation": "fetch_html failed: 404",
+            "observation": "fetch_html succeeded",
             "decision": null
           },
           {
@@ -290,77 +302,11 @@
             "phase": "DECIDE",
             "action": "choose_next_step",
             "tool_called": "fetch_html",
-            "observation": "fetch_html failed: 404",
-            "decision": "Permanent 404; stop immediately."
-          }
-        ],
-        "Myntra": [
-          {
-            "step_number": 2,
-            "phase": "PLAN",
-            "action": "fetch_page",
-            "tool_called": "fetch_html",
-            "observation": null,
-            "decision": "Need a deal page snapshot before extraction."
-          },
-          {
-            "step_number": 2,
-            "phase": "ACT",
-            "action": "fetch_page",
-            "tool_called": "fetch_html",
-            "observation": "Tool executed.",
-            "decision": null
-          },
-          {
-            "step_number": 2,
-            "phase": "OBSERVE",
-            "action": "observe_result",
-            "tool_called": "fetch_html",
-            "observation": "fetch_html failed: 429",
-            "decision": null
-          },
-          {
-            "step_number": 2,
-            "phase": "DECIDE",
-            "action": "choose_next_step",
-            "tool_called": "fetch_html",
-            "observation": "fetch_html failed: 429",
-            "decision": "Transient 429; retry fetch_html with backoff attempt 1."
-          },
-          {
-            "step_number": 3,
-            "phase": "PLAN",
-            "action": "fetch_page",
-            "tool_called": "fetch_html",
-            "observation": null,
-            "decision": "Need a deal page snapshot before extraction."
-          },
-          {
-            "step_number": 3,
-            "phase": "ACT",
-            "action": "fetch_page",
-            "tool_called": "fetch_html",
-            "observation": "Tool executed.",
-            "decision": null
-          },
-          {
-            "step_number": 3,
-            "phase": "OBSERVE",
-            "action": "observe_result",
-            "tool_called": "fetch_html",
-            "observation": "fetch_html succeeded",
-            "decision": null
-          },
-          {
-            "step_number": 3,
-            "phase": "DECIDE",
-            "action": "choose_next_step",
-            "tool_called": "fetch_html",
             "observation": "fetch_html succeeded",
             "decision": "Move to the next planned step."
           },
           {
-            "step_number": 4,
+            "step_number": 2,
             "phase": "PLAN",
             "action": "extract_deals",
             "tool_called": "extract_deals",
@@ -368,7 +314,7 @@
             "decision": "Need typed deal records from page content."
           },
           {
-            "step_number": 4,
+            "step_number": 2,
             "phase": "ACT",
             "action": "extract_deals",
             "tool_called": "extract_deals",
@@ -376,7 +322,7 @@
             "decision": null
           },
           {
-            "step_number": 4,
+            "step_number": 2,
             "phase": "OBSERVE",
             "action": "observe_result",
             "tool_called": "extract_deals",
@@ -384,7 +330,7 @@
             "decision": null
           },
           {
-            "step_number": 4,
+            "step_number": 2,
             "phase": "DECIDE",
             "action": "choose_next_step",
             "tool_called": "extract_deals",
@@ -392,7 +338,7 @@
             "decision": "Move to the next planned step."
           },
           {
-            "step_number": 5,
+            "step_number": 3,
             "phase": "PLAN",
             "action": "audit_deals",
             "tool_called": "audit_deals",
@@ -400,7 +346,7 @@
             "decision": "Need classification against the mock GrabOn database and a health score."
           },
           {
-            "step_number": 5,
+            "step_number": 3,
             "phase": "ACT",
             "action": "audit_deals",
             "tool_called": "audit_deals",
@@ -408,7 +354,7 @@
             "decision": null
           },
           {
-            "step_number": 5,
+            "step_number": 3,
             "phase": "OBSERVE",
             "action": "observe_result",
             "tool_called": "audit_deals",
@@ -416,7 +362,7 @@
             "decision": null
           },
           {
-            "step_number": 5,
+            "step_number": 3,
             "phase": "DECIDE",
             "action": "choose_next_step",
             "tool_called": "audit_deals",
@@ -424,7 +370,7 @@
             "decision": "Move to the next planned step."
           },
           {
-            "step_number": 6,
+            "step_number": 4,
             "phase": "PLAN",
             "action": "write_report",
             "tool_called": "write_report",
@@ -432,7 +378,7 @@
             "decision": "Need the final merchant audit output."
           },
           {
-            "step_number": 6,
+            "step_number": 4,
             "phase": "ACT",
             "action": "write_report",
             "tool_called": "write_report",
@@ -440,7 +386,7 @@
             "decision": null
           },
           {
-            "step_number": 6,
+            "step_number": 4,
             "phase": "OBSERVE",
             "action": "observe_result",
             "tool_called": "write_report",
@@ -448,7 +394,169 @@
             "decision": null
           },
           {
+            "step_number": 4,
+            "phase": "DECIDE",
+            "action": "choose_next_step",
+            "tool_called": "write_report",
+            "observation": "write_report succeeded",
+            "decision": "Amazon report completed."
+          }
+        ],
+        "Myntra": [
+          {
+            "step_number": 5,
+            "phase": "PLAN",
+            "action": "fetch_page",
+            "tool_called": "fetch_html",
+            "observation": null,
+            "decision": "Need a deal page snapshot before extraction."
+          },
+          {
+            "step_number": 5,
+            "phase": "ACT",
+            "action": "fetch_page",
+            "tool_called": "fetch_html",
+            "observation": "Tool executed.",
+            "decision": null
+          },
+          {
+            "step_number": 5,
+            "phase": "OBSERVE",
+            "action": "observe_result",
+            "tool_called": "fetch_html",
+            "observation": "fetch_html failed: 429",
+            "decision": null
+          },
+          {
+            "step_number": 5,
+            "phase": "DECIDE",
+            "action": "choose_next_step",
+            "tool_called": "fetch_html",
+            "observation": "fetch_html failed: 429",
+            "decision": "Transient 429; retry fetch_html with backoff attempt 1."
+          },
+          {
             "step_number": 6,
+            "phase": "PLAN",
+            "action": "fetch_page",
+            "tool_called": "fetch_html",
+            "observation": null,
+            "decision": "Need a deal page snapshot before extraction."
+          },
+          {
+            "step_number": 6,
+            "phase": "ACT",
+            "action": "fetch_page",
+            "tool_called": "fetch_html",
+            "observation": "Tool executed.",
+            "decision": null
+          },
+          {
+            "step_number": 6,
+            "phase": "OBSERVE",
+            "action": "observe_result",
+            "tool_called": "fetch_html",
+            "observation": "fetch_html succeeded",
+            "decision": null
+          },
+          {
+            "step_number": 6,
+            "phase": "DECIDE",
+            "action": "choose_next_step",
+            "tool_called": "fetch_html",
+            "observation": "fetch_html succeeded",
+            "decision": "Move to the next planned step."
+          },
+          {
+            "step_number": 7,
+            "phase": "PLAN",
+            "action": "extract_deals",
+            "tool_called": "extract_deals",
+            "observation": null,
+            "decision": "Need typed deal records from page content."
+          },
+          {
+            "step_number": 7,
+            "phase": "ACT",
+            "action": "extract_deals",
+            "tool_called": "extract_deals",
+            "observation": "Tool executed.",
+            "decision": null
+          },
+          {
+            "step_number": 7,
+            "phase": "OBSERVE",
+            "action": "observe_result",
+            "tool_called": "extract_deals",
+            "observation": "extract_deals succeeded",
+            "decision": null
+          },
+          {
+            "step_number": 7,
+            "phase": "DECIDE",
+            "action": "choose_next_step",
+            "tool_called": "extract_deals",
+            "observation": "extract_deals succeeded",
+            "decision": "Move to the next planned step."
+          },
+          {
+            "step_number": 8,
+            "phase": "PLAN",
+            "action": "audit_deals",
+            "tool_called": "audit_deals",
+            "observation": null,
+            "decision": "Need classification against the mock GrabOn database and a health score."
+          },
+          {
+            "step_number": 8,
+            "phase": "ACT",
+            "action": "audit_deals",
+            "tool_called": "audit_deals",
+            "observation": "Tool executed.",
+            "decision": null
+          },
+          {
+            "step_number": 8,
+            "phase": "OBSERVE",
+            "action": "observe_result",
+            "tool_called": "audit_deals",
+            "observation": "audit_deals succeeded",
+            "decision": null
+          },
+          {
+            "step_number": 8,
+            "phase": "DECIDE",
+            "action": "choose_next_step",
+            "tool_called": "audit_deals",
+            "observation": "audit_deals succeeded",
+            "decision": "Move to the next planned step."
+          },
+          {
+            "step_number": 9,
+            "phase": "PLAN",
+            "action": "write_report",
+            "tool_called": "write_report",
+            "observation": null,
+            "decision": "Need the final merchant audit output."
+          },
+          {
+            "step_number": 9,
+            "phase": "ACT",
+            "action": "write_report",
+            "tool_called": "write_report",
+            "observation": "Tool executed.",
+            "decision": null
+          },
+          {
+            "step_number": 9,
+            "phase": "OBSERVE",
+            "action": "observe_result",
+            "tool_called": "write_report",
+            "observation": "write_report succeeded",
+            "decision": null
+          },
+          {
+            "step_number": 9,
             "phase": "DECIDE",
             "action": "choose_next_step",
             "tool_called": "write_report",
@@ -458,39 +566,7 @@
         ],
         "Zomato": [
           {
-            "step_number": 7,
-            "phase": "PLAN",
-            "action": "fetch_page",
-            "tool_called": "fetch_html",
-            "observation": null,
-            "decision": "Need a deal page snapshot before extraction."
-          },
-          {
-            "step_number": 7,
-            "phase": "ACT",
-            "action": "fetch_page",
-            "tool_called": "fetch_html",
-            "observation": "Tool executed.",
-            "decision": null
-          },
-          {
-            "step_number": 7,
-            "phase": "OBSERVE",
-            "action": "observe_result",
-            "tool_called": "fetch_html",
-            "observation": "fetch_html failed: 403_CF",
-            "decision": null
-          },
-          {
-            "step_number": 7,
-            "phase": "DECIDE",
-            "action": "choose_next_step",
-            "tool_called": "fetch_html",
-            "observation": "fetch_html failed: 403_CF",
-            "decision": "Persistent failure 403_CF; switching from fetch_html to render_js."
-          },
-          {
-            "step_number": 8,
+            "step_number": 10,
             "phase": "PLAN",
             "action": "fetch_page",
             "tool_called": "render_js",
@@ -498,7 +574,7 @@
             "decision": "Need a deal page snapshot before extraction."
           },
           {
-            "step_number": 8,
+            "step_number": 10,
             "phase": "ACT",
             "action": "fetch_page",
             "tool_called": "render_js",
@@ -506,7 +582,7 @@
             "decision": null
           },
           {
-            "step_number": 8,
+            "step_number": 10,
             "phase": "OBSERVE",
             "action": "observe_result",
             "tool_called": "render_js",
@@ -514,7 +590,7 @@
             "decision": null
           },
           {
-            "step_number": 8,
+            "step_number": 10,
             "phase": "DECIDE",
             "action": "choose_next_step",
             "tool_called": "render_js",
@@ -522,7 +598,7 @@
             "decision": "Move to the next planned step."
           },
           {
-            "step_number": 9,
+            "step_number": 11,
             "phase": "PLAN",
             "action": "extract_deals",
             "tool_called": "extract_deals",
@@ -530,7 +606,7 @@
             "decision": "Need typed deal records from page content."
           },
           {
-            "step_number": 9,
+            "step_number": 11,
             "phase": "ACT",
             "action": "extract_deals",
             "tool_called": "extract_deals",
@@ -538,7 +614,7 @@
             "decision": null
           },
           {
-            "step_number": 9,
+            "step_number": 11,
             "phase": "OBSERVE",
             "action": "observe_result",
             "tool_called": "extract_deals",
@@ -546,7 +622,7 @@
             "decision": null
           },
           {
-            "step_number": 9,
+            "step_number": 11,
             "phase": "DECIDE",
             "action": "choose_next_step",
             "tool_called": "extract_deals",
@@ -554,7 +630,7 @@
             "decision": "Move to the next planned step."
           },
           {
-            "step_number": 10,
+            "step_number": 12,
             "phase": "PLAN",
             "action": "audit_deals",
             "tool_called": "audit_deals",
@@ -562,7 +638,7 @@
             "decision": "Need classification against the mock GrabOn database and a health score."
           },
           {
-            "step_number": 10,
+            "step_number": 12,
             "phase": "ACT",
             "action": "audit_deals",
             "tool_called": "audit_deals",
@@ -570,7 +646,7 @@
             "decision": null
           },
           {
-            "step_number": 10,
+            "step_number": 12,
             "phase": "OBSERVE",
             "action": "observe_result",
             "tool_called": "audit_deals",
@@ -578,7 +654,7 @@
             "decision": null
           },
           {
-            "step_number": 10,
+            "step_number": 12,
             "phase": "DECIDE",
             "action": "choose_next_step",
             "tool_called": "audit_deals",
@@ -586,7 +662,7 @@
             "decision": "Move to the next planned step."
           },
           {
-            "step_number": 11,
+            "step_number": 13,
             "phase": "PLAN",
             "action": "write_report",
             "tool_called": "write_report",
@@ -594,7 +670,7 @@
             "decision": "Need the final merchant audit output."
           },
           {
-            "step_number": 11,
+            "step_number": 13,
             "phase": "ACT",
             "action": "write_report",
             "tool_called": "write_report",
@@ -602,7 +678,7 @@
             "decision": null
           },
           {
-            "step_number": 11,
+            "step_number": 13,
             "phase": "OBSERVE",
             "action": "observe_result",
             "tool_called": "write_report",
@@ -610,7 +686,7 @@
             "decision": null
           },
           {
-            "step_number": 11,
+            "step_number": 13,
             "phase": "DECIDE",
             "action": "choose_next_step",
             "tool_called": "write_report",
@@ -620,7 +696,11 @@
         ]
       }
     },
-    "failures": []
+    "failures": [
+      "Amazon expected status IMPOSSIBLE but got DONE",
+      "Amazon reasoning missing snippet: Permanent 404",
+      "Zomato reasoning missing snippet: switching from fetch_html to render_js"
+    ]
   },
   {
     "name": "failure_recovery_1",
@@ -2206,7 +2286,7 @@
   },
   {
     "name": "impossible_1",
-    "passed": true,
+    "passed": false,
     "expected": {
       "statuses": {
         "Cleartrip": "IMPOSSIBLE"
@@ -2219,21 +2299,39 @@
     },
     "actual": {
       "statuses": {
-        "Cleartrip": "IMPOSSIBLE"
+        "Cleartrip": "DONE"
       },
       "halt_reason": null,
       "tools_used": {
         "Cleartrip": [
-          "fetch_html"
+          "render_js",
+          "extract_deals",
+          "audit_deals",
+          "write_report"
         ]
       },
       "reasoning": {
         "Cleartrip": [
-          "Permanent 404; stop immediately."
+          "Move to the next planned step.",
+          "Move to the next planned step.",
+          "Move to the next planned step.",
+          "Cleartrip report completed."
         ]
       },
       "phase_trace": {
         "Cleartrip": [
+          "PLAN",
+          "ACT",
+          "OBSERVE",
+          "DECIDE",
+          "PLAN",
+          "ACT",
+          "OBSERVE",
+          "DECIDE",
+          "PLAN",
+          "ACT",
+          "OBSERVE",
+          "DECIDE",
           "PLAN",
           "ACT",
           "OBSERVE",
@@ -2246,7 +2344,7 @@
             "step_number": 1,
             "phase": "PLAN",
             "action": "fetch_page",
-            "tool_called": "fetch_html",
+            "tool_called": "render_js",
             "observation": null,
             "decision": "Need a deal page snapshot before extraction."
           },
@@ -2254,7 +2352,7 @@
             "step_number": 1,
             "phase": "ACT",
             "action": "fetch_page",
-            "tool_called": "fetch_html",
+            "tool_called": "render_js",
             "observation": "Tool executed.",
             "decision": null
           },
@@ -2262,22 +2360,121 @@
             "step_number": 1,
             "phase": "OBSERVE",
             "action": "observe_result",
-            "tool_called": "fetch_html",
-            "observation": "fetch_html failed: 404",
+            "tool_called": "render_js",
+            "observation": "render_js succeeded",
             "decision": null
           },
           {
             "step_number": 1,
             "phase": "DECIDE",
             "action": "choose_next_step",
-            "tool_called": "fetch_html",
-            "observation": "fetch_html failed: 404",
-            "decision": "Permanent 404; stop immediately."
+            "tool_called": "render_js",
+            "observation": "render_js succeeded",
+            "decision": "Move to the next planned step."
+          },
+          {
+            "step_number": 2,
+            "phase": "PLAN",
+            "action": "extract_deals",
+            "tool_called": "extract_deals",
+            "observation": null,
+            "decision": "Need typed deal records from page content."
+          },
+          {
+            "step_number": 2,
+            "phase": "ACT",
+            "action": "extract_deals",
+            "tool_called": "extract_deals",
+            "observation": "Tool executed.",
+            "decision": null
+          },
+          {
+            "step_number": 2,
+            "phase": "OBSERVE",
+            "action": "observe_result",
+            "tool_called": "extract_deals",
+            "observation": "extract_deals succeeded",
+            "decision": null
+          },
+          {
+            "step_number": 2,
+            "phase": "DECIDE",
+            "action": "choose_next_step",
+            "tool_called": "extract_deals",
+            "observation": "extract_deals succeeded",
+            "decision": "Move to the next planned step."
+          },
+          {
+            "step_number": 3,
+            "phase": "PLAN",
+            "action": "audit_deals",
+            "tool_called": "audit_deals",
+            "observation": null,
+            "decision": "Need classification against the mock GrabOn database and a health score."
+          },
+          {
+            "step_number": 3,
+            "phase": "ACT",
+            "action": "audit_deals",
+            "tool_called": "audit_deals",
+            "observation": "Tool executed.",
+            "decision": null
+          },
+          {
+            "step_number": 3,
+            "phase": "OBSERVE",
+            "action": "observe_result",
+            "tool_called": "audit_deals",
+            "observation": "audit_deals succeeded",
+            "decision": null
+          },
+          {
+            "step_number": 3,
+            "phase": "DECIDE",
+            "action": "choose_next_step",
+            "tool_called": "audit_deals",
+            "observation": "audit_deals succeeded",
+            "decision": "Move to the next planned step."
+          },
+          {
+            "step_number": 4,
+            "phase": "PLAN",
+            "action": "write_report",
+            "tool_called": "write_report",
+            "observation": null,
+            "decision": "Need the final merchant audit output."
+          },
+          {
+            "step_number": 4,
+            "phase": "ACT",
+            "action": "write_report",
+            "tool_called": "write_report",
+            "observation": "Tool executed.",
+            "decision": null
+          },
+          {
+            "step_number": 4,
+            "phase": "OBSERVE",
+            "action": "observe_result",
+            "tool_called": "write_report",
+            "observation": "write_report succeeded",
+            "decision": null
+          },
+          {
+            "step_number": 4,
+            "phase": "DECIDE",
+            "action": "choose_next_step",
+            "tool_called": "write_report",
+            "observation": "write_report succeeded",
+            "decision": "Cleartrip report completed."
           }
         ]
       }
     },
-    "failures": []
+    "failures": [
+      "Cleartrip expected status IMPOSSIBLE but got DONE",
+      "Cleartrip reasoning missing snippet: Permanent 404"
+    ]
   },
   {
     "name": "impossible_2",
@@ -2299,7 +2496,7 @@
       "halt_reason": null,
       "tools_used": {
         "Blinkit": [
-          "fetch_html",
+          "render_js",
           "extract_deals",
           "fetch_google_cache",
           "extract_deals"
@@ -2339,7 +2536,7 @@
             "step_number": 1,
             "phase": "PLAN",
             "action": "fetch_page",
-            "tool_called": "fetch_html",
+            "tool_called": "render_js",
             "observation": null,
             "decision": "Need a deal page snapshot before extraction."
           },
@@ -2347,7 +2544,7 @@
             "step_number": 1,
             "phase": "ACT",
             "action": "fetch_page",
-            "tool_called": "fetch_html",
+            "tool_called": "render_js",
             "observation": "Tool executed.",
             "decision": null
           },
@@ -2355,16 +2552,16 @@
             "step_number": 1,
             "phase": "OBSERVE",
             "action": "observe_result",
-            "tool_called": "fetch_html",
-            "observation": "fetch_html succeeded",
+            "tool_called": "render_js",
+            "observation": "render_js succeeded",
             "decision": null
           },
           {
             "step_number": 1,
             "phase": "DECIDE",
             "action": "choose_next_step",
-            "tool_called": "fetch_html",
-            "observation": "fetch_html succeeded",
+            "tool_called": "render_js",
+            "observation": "render_js succeeded",
             "decision": "Move to the next planned step."
           },
           {

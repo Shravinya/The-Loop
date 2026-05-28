@@ -1,0 +1,14 @@
+name,passed,failures_count,tools_count,steps_count,failures
+budget_exceeded_1,True,0,3,9,
+budget_exceeded_2,True,0,0,0,
+error_discrimination,False,3,13,52,Amazon expected status IMPOSSIBLE but got DONE | Amazon reasoning missing snippet: Permanent 404 | Zomato reasoning missing snippet: switching from fetch_html to render_js
+failure_recovery_1,True,0,5,20,
+failure_recovery_2,True,0,5,20,
+failure_recovery_3,True,0,4,16,
+happy_path_1,True,0,4,16,
+happy_path_2,True,0,4,16,
+happy_path_3,True,0,4,16,
+happy_path_4,True,0,4,16,
+happy_path_5,True,0,4,16,
+impossible_1,False,2,4,16,Cleartrip expected status IMPOSSIBLE but got DONE | Cleartrip reasoning missing snippet: Permanent 404
+impossible_2,True,0,4,16,
