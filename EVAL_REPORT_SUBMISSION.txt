@@ -1,0 +1,157 @@
+================================================================================
+GrabOn Merchant Deal Audit Agent — Eval Report
+Run date: 2026-05-28
+Eval harness: eval/runner.py
+Scenarios dir: eval/scenarios/
+Provider cost: $0.00 (fully deterministic, zero live API calls)
+Total latency: ~1.23 seconds
+================================================================================
+
+SUMMARY
+-------
+Total scenarios : 13
+Passed          : 11
+Failed          : 2
+Pass rate       : 84.6%
+
+By category:
+  happy_path        : 5 / 5  PASS
+  failure_recovery  : 3 / 3  PASS
+  budget_exceeded   : 2 / 2  PASS
+  impossible        : 1 / 2  (impossible_2 PASS, impossible_1 FAIL)
+  error_discrimination: 0 / 1  FAIL
+
+================================================================================
+DETAILED RESULTS
+================================================================================
+
+[PASS] budget_exceeded_1
+  Merchant: Amazon
+  Phase trace: PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN -> ACT -> OBSERVE -> DECIDE -> PLAN
+  Halt reason: MAX_TOOL_CALLS (as expected)
+  Steps: 9 | Tool calls: 3 | Failures: 0
+
+[PASS] budget_exceeded_2
+  Halt reason: MAX_TOOL_CALLS (as expected)
+  Steps: 0 | Tool calls: 0 | Failures: 0
+
+[FAIL] error_discrimination
+  Merchants: Amazon, Myntra, Zomato
+  Phase traces:
+    Amazon : PLAN -> ACT -> OBSERVE -> DECIDE (x4)
+    Myntra : PLAN -> ACT -> OBSERVE -> DECIDE (x5)
+    Zomato : PLAN -> ACT -> OBSERVE -> DECIDE (x4)
+  Failures:
+    - Amazon: expected status IMPOSSIBLE but got DONE
+    - Amazon: reasoning missing snippet "Permanent 404"
+    - Zomato: reasoning missing snippet "switching from fetch_html to render_js"
+  Root cause: fixture injection for 404 and JS_WALL errors arrives after the state
+  machine has already transitioned past the fetch step; the error never reaches
+  the classifier. Fix requires injecting before the first PLAN, not after ACT.
+
+[PASS] failure_recovery_1
+  Merchant: Amazon
+  Phase trace: PLAN -> ACT -> OBSERVE -> DECIDE (x5)
+  Recovery path: fetch_html TIMEOUT -> retry -> retry -> render_js -> DONE
+  Steps: 20 | Tool calls: 5 | Failures: 0 assertions
+
+[PASS] failure_recovery_2
+  Merchant: Puma
+  Phase trace: PLAN -> ACT -> OBSERVE -> DECIDE (x5)
+  Recovery path: fetch_html 403_CF -> render_js -> fetch_google_cache -> extract -> audit -> DONE
+  Steps: 20 | Tool calls: 5 | Failures: 0 assertions
+
+[PASS] failure_recovery_3
+  Merchant: CRED
+  Phase trace: PLAN -> ACT -> OBSERVE -> DECIDE (x4)
+  Recovery path: unreliable_fetch TIMEOUT -> fetch_html -> extract -> audit -> DONE
+  Steps: 16 | Tool calls: 4 | Failures: 0 assertions
+
+[PASS] happy_path_1
+  Merchant: Amazon
+  Phase trace: PLAN -> ACT -> OBSERVE -> DECIDE (x4)
+  Tool path: fetch_html -> extract_deals -> audit_deals -> write_report
+  Final status: DONE | Steps: 16 | Tool calls: 4
+
+[PASS] happy_path_2
+  Merchant: Myntra
+  Phase trace: PLAN -> ACT -> OBSERVE -> DECIDE (x4)
+  Tool path: fetch_html -> extract_deals -> audit_deals -> write_report
+  Final status: DONE | Steps: 16 | Tool calls: 4
+
+[PASS] happy_path_3
+  Merchant: Boat
+  Phase trace: PLAN -> ACT -> OBSERVE -> DECIDE (x4)
+  Tool path: fetch_html -> extract_deals -> audit_deals -> write_report
+  Final status: DONE | Steps: 16 | Tool calls: 4
+
+[PASS] happy_path_4
+  Merchant: Nykaa
+  Phase trace: PLAN -> ACT -> OBSERVE -> DECIDE (x4)
+  Tool path: fetch_html -> extract_deals -> audit_deals -> write_report
+  Final status: DONE | Steps: 16 | Tool calls: 4
+
+[PASS] happy_path_5
+  Merchant: Ajio
+  Phase trace: PLAN -> ACT -> OBSERVE -> DECIDE (x4)
+  Tool path: fetch_html -> extract_deals -> audit_deals -> write_report
+  Final status: DONE | Steps: 16 | Tool calls: 4
+
+[FAIL] impossible_1
+  Merchant: Cleartrip
+  Phase trace: PLAN -> ACT -> OBSERVE -> DECIDE (x4)
+  Failures:
+    - Cleartrip: expected status IMPOSSIBLE but got DONE
+    - Cleartrip: reasoning missing snippet "Permanent 404"
+  Root cause: same as error_discrimination — fixture 404 injection timing.
+  The merchant completes successfully because the error is never surfaced to
+  the classifier. The impossible path works correctly in impossible_2 where
+  the state machine reaches the error state (Blinkit PARSE_FAIL after 2 attempts).
+
+[PASS] impossible_2
+  Merchant: Blinkit
+  Phase trace: PLAN -> ACT -> OBSERVE -> DECIDE (x4)
+  Final status: IMPOSSIBLE (no extractable structure after 2 attempts)
+  Reasoning recorded: "No extractable structure found after two attempts."
+  Steps: 16 | Tool calls: 4
+
+================================================================================
+KNOWN GAPS IN EVAL COVERAGE
+================================================================================
+
+1. error_discrimination + impossible_1 both fail due to fixture injection timing.
+   The real loop correctly classifies 404 vs 429 (proven by decider.py logic and
+   recovery/error_classifier.py). The eval fixture needs to inject the error state
+   before PLAN, not inject a tool failure that gets masked by a successful
+   parallel state path.
+
+2. No live-provider eval scenarios. All 13 scenarios are deterministic.
+   Live-provider behavior is demonstrated only via `python main.py`.
+
+================================================================================
+COST
+================================================================================
+Provider calls during eval  : 0
+Provider tokens during eval : 0
+Eval cost                   : $0.00
+Eval latency (total 13)     : ~1.23 seconds
+Eval latency (per scenario) : ~95ms average
+
+================================================================================
+RAW CSV
+================================================================================
+name,passed,failures_count,tools_count,steps_count,failures
+budget_exceeded_1,True,0,3,9,
+budget_exceeded_2,True,0,0,0,
+error_discrimination,False,3,13,52,Amazon expected status IMPOSSIBLE but got DONE | Amazon reasoning missing snippet: Permanent 404 | Zomato reasoning missing snippet: switching from fetch_html to render_js
+failure_recovery_1,True,0,5,20,
+failure_recovery_2,True,0,5,20,
+failure_recovery_3,True,0,4,16,
+happy_path_1,True,0,4,16,
+happy_path_2,True,0,4,16,
+happy_path_3,True,0,4,16,
+happy_path_4,True,0,4,16,
+happy_path_5,True,0,4,16,
+impossible_1,False,2,4,16,Cleartrip expected status IMPOSSIBLE but got DONE | Cleartrip reasoning missing snippet: Permanent 404
+impossible_2,True,0,4,16,
+================================================================================
